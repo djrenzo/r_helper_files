@@ -1,5 +1,4 @@
-push <- function(msg=toString(now())) {
-  library(lubridate)
+push <- function(msg=toString(lubridate::now())) {
   #setwd("~/timeseries")
   system("git add --all")
   system(paste0("git commit -m '", msg, "'"))
