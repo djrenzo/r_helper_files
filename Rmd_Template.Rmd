@@ -1,0 +1,20 @@
+---
+title: |
+       | **Title**
+       | Undertitle
+author: |
+        | Name1
+        | Name2
+date: \today
+output: 
+  pdf_document: 
+    keep_tex: yes
+    toc: yes
+    number_sections: yes
+  html_document:
+    df_print: paged
+---
+```{r push_to_git, include=FALSE}
+source("https://raw.githubusercontent.com/djrenzo/r_helper_files/main/push.R")
+push("Knitting File")
+```
