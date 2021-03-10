@@ -260,3 +260,13 @@ extract.rugarch <- function(fit,
   )
   return(tr)
 }
+
+to_markdown <- function(m, cust_row, cust_names, dig){
+  m = matrixreg(m,
+          custom.gof.rows = cust_row,
+          custom.model.names = cust_names, 
+          digits = dig)
+  colnames(m) = m[1,]
+  rownames(m) = m[,1]
+  return(m[-1,-1])
+}
