@@ -1,3 +1,8 @@
+if(!("lubridate" %in% rownames(installed.packages()))){
+  install.packages("lubridate")
+}
+  
+
 require("lubridate")
 
 push <- function(msg=toString(lubridate::now())) {
