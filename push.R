@@ -1,3 +1,5 @@
+require("lubridate")
+
 push <- function(msg=toString(lubridate::now())) {
   #setwd("~/timeseries")
   system("git add --all")
